@@ -6,15 +6,15 @@ import './../styles/App.css';
 const tabs = [
   {
     title: "Tab 1",
-    content: "This is the content for Tab 1",
+    content: "This is the content",
   },
   {
     title: "Tab 2",
-    content: "This is the content for Tab 2",
+    content: "This is the content",
   },
   {
     title: "Tab 3",
-    content: "This is the content for Tab 3",
+    content: "This is the content",
   }
 ];
 
@@ -40,7 +40,7 @@ const Tab = ({ tabs }) => {
           </li>
         </a>
       ))}
-      {tabstate && <p>{tabstate.content}</p>}
+      {tabstate && <p>{tabstate.content} {tabs.title}</p>}
     </div>
   );
 };
