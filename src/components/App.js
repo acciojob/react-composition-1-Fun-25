@@ -31,7 +31,7 @@ const Tab = ({ tabs }) => {
           </li>
         </a>
       ))}
-      {tabstate && <p>{tabstate.content}</p>}
+      {tabstate && <div>{tabstate.content}</div>}
     </div>
   );
 };
